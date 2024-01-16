@@ -1,0 +1,16 @@
+<div class="navbar">
+  <a href="syllabus.html" class="nav-link">Syllabus</a>
+  <a href="intro.html" class="nav-link">Intro block</a>
+  <a href="sb1.html" class="nav-link">Standard block 1</a>
+  <a href="sb2.html" class="nav-link">Standard block 2</a>
+  <a href="sb3.html" class="nav-link">Standard block 3</a>
+  <a href="conclusion.html" class="nav-link">Conclusion</a>
+</div>
+<script>
+document.querySelectorAll(".nav-link").forEach((link) => {
+    if (link.href === window.location.href) {
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
+    }
+});
+</script>

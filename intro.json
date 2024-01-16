@@ -1,0 +1,34 @@
+[
+    {
+        "question": "What is the primary goal of a phishing attack?",
+        "optionA": "To steal sensitive information",
+        "optionB": "To send spam emails",
+        "optionC": "To sell you a timeshare",
+        "optionD": "To update your computer's software",
+        "correctOption": "optionA"
+    },
+    {
+        "question": "Which of the following can be a target of phishing attacks?",
+        "optionA": "Individuals",
+        "optionB": "Organizations",
+        "optionC": "Both individuals and organizations",
+        "optionD": "Phish",
+        "correctOption": "optionC"
+    },
+    {
+        "question": "Who is responsible for phishing prevention in an organization?",
+        "optionA": "IT professionals",
+        "optionB": "Developers",
+        "optionC": "Both IT professionals and developers",
+        "optionD": "The office cat",
+        "correctOption": "optionC"
+    },
+    {
+        "question": "What is the potential consequence of a successful phishing attack?",
+        "optionA": "Financial loss",
+        "optionB": "Data breach",
+        "optionC": "Damage to reputation",
+        "optionD": "All of the above, plus a lifetime supply of spam emails",
+        "correctOption": "optionD"
+    }
+]

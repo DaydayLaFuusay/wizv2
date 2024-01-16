@@ -1,0 +1,108 @@
+<head><meta content='width=device-width, initial-scale=1' name='viewport' /><script src='https://code.jquery.com/jquery-1.11.3.min.js'></script><script>$(function(){$('#includeHtml').load('nav_footer.html');});</script><link rel='stylesheet' href='styles3.css'><link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'></head><body onload='Func().then(() => NextQuestion(0))'><div class='part_header'><div class='part_header_row_1'><div class='part_header_title'>Phishing Prevention Training for IT and Developers</div></div><div class='part_header_row_2'><div class='part_header_author'><strong>Nick Becker</strong></div><div class='part_header_part'>LESSON 1 OF 5</div></div></div><div class='wide_image'><img style='width:100%' src='images/An image depicting a fish hook symbolizing the dec.jpg'></div><div class='title_sentence'><h2><b>A Few Words About Phishing Prevention</b></h2><p>Just like a fisherman baits his hook to lure unsuspecting fish, cybercriminals use phishing to trick individuals into revealing sensitive information. This training is your fishing guide, helping you to recognize the bait and avoid the hook.</p></div><div class='title_sentence'><h2><b>The Unique Aspects of This Training</b></h2><p>This training goes beyond the technical aspects of phishing prevention, emphasizing the human factors involved. It provides a comprehensive understanding of social engineering tactics used in phishing attacks and the importance of firewall configuration in preventing such threats.</p></div><div class='important' style='margin-left:0%;margin-right:0%;'><ul><li><span>1</span> According to the FBI, phishing was the most common type of cybercrime in 2020.</li><li><span>2</span> A report by Verizon found that 30% of phishing messages get opened by targeted users.</li><li><span>3</span> The average financial cost of a phishing attack for a mid-sized company is $1.6 million, as reported by CSO Online.</li></ul></div><div class='quote'><div class='quote_img'><img style='width:100%' src='images/I always say, better to be a shark in a sea of ph.jpg'></div><div class='quote_text'>''I always say, better to be a shark in a sea of phish than a phish in a sea of sharks.' - Albert Einstein (not really)'</div></div><div class='title_sentence'><h2><b>The Escalating Risks of Phishing</b></h2><p>As technology advances, so do the tactics of cybercriminals. Phishing attacks have evolved from simple email scams to sophisticated strategies that can bypass even the most robust security systems. The consequences of neglecting proper phishing prevention can be catastrophic, leading to financial losses, data breaches, and damage to the company's reputation.</p></div><div class='next_step'>Now that we've set the stage, let's dive into the specifics of phishing prevention.</div><div class='two_lists'><h2><b>The Players in Phishing Prevention</b></h2><h3><b>The Heroes:</b></h3><div class='important' style='margin-left:0%;margin-right:0%;width:100%;'><ul><li><span>1</span> IT Professionals: They implement security measures and manage the overall IT infrastructure of an organization.</li><li><span>2</span> Developers: They play a crucial role in creating secure software and applications that are resistant to phishing attacks.</li><li><span>3</span> Security Analysts: They monitor and analyze the organization's security measures, identifying potential vulnerabilities and threats.</li></ul></div><h3><b>The villains:</b></h3><div class='important' style='margin-left:0%;margin-right:0%;width:100%;'><ul><li><span>1</span> Phishers: They are the perpetrators who carry out phishing attacks, often disguising themselves as trustworthy entities.</li><li><span>2</span> Hacktivists: They may use phishing as a tool to promote a political agenda or to cause disruption.</li><li><span>3</span> Organized Cybercrime Groups: These are highly organized groups that carry out large-scale phishing attacks for financial gain.</li></ul></div><div class='note'>This is not an exhaustive list but a detail of the most notorious actors that are the usual suspects.</div></div><div class='title_sentence'><h2><b>The Consequences of Neglecting Phishing Prevention</b></h2><p>Failing to address phishing prevention can lead to disastrous outcomes. Here are a few examples:</p></div><div class='important' style='margin-left:25%;margin-right:25%;'><ul><li><span>1</span> Financial Loss: Phishing attacks can lead to direct financial loss, as attackers often aim to steal financial information.</li><li><span>2</span> Data Breach: Sensitive data can be compromised, leading to a breach of customer or employee information.</li><li><span>3</span> Damage to Reputation: A successful phishing attack can damage a company's reputation, leading to loss of customers and business.</li></ul></div><div class='quote'><div class='quote_img'><img style='width:100%' src='images/Phishing is a major problem because it works. It.jpg'></div><div class='quote_text'>''Phishing is a major problem because it works. It's easy to implement, and it's even easier to fall for.' - Kevin Mitnick'</div></div>
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+    
+            <div class="modal-content-container">
+    
+                <h1>Congratulations, Quiz Completed.</h1>
+    
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+    
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+    
+            </div>
+        </div>
+    <!-- end of modal of quiz details-->
+    
+        <div class="game-quiz-container">
+    
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> /  4 </h1>
+                <h1> Question : <span id="question-number"></span> / 4</h1>
+            </div>
+    
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+    
+            <div class="game-options-container">
+    
+               <div class="modal-container" id="option-modal">
+    
+                    <div class="modal-content-container">
+                         <h1>Please Pick An Option</h1>
+    
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+    
+                    </div>
+    
+               </div>
+    
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+    
+    
+            </div>
+    
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+    
+        </div>
+    </main>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1"><input type="radio" name="slides" id="slide-2"><ul class="carousel__slides"><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/In 2016, a phishing attack on the Hillary Clinton .jpg" alt="">
+                        </div>
+                        <figcaption>
+                            In 2016, a phishing attack on the Hillary Clinton presidential campaign led to the leak of sensitive emails. The attackers used a fake Google security alert to gain access to the campaign chairman's email account. This incident highlights the importance of recognizing phishing tactics and the potential consequences of falling for such attacks.                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/In 2017, a massive phishing attack targeted Gmail .jpg" alt="">
+                        </div>
+                        <figcaption>
+                            In 2017, a massive phishing attack targeted Gmail users. The attackers disguised themselves as a trusted contact and tricked users into opening a fake Google Docs link, leading to the compromise of thousands of Gmail accounts. This incident underscores the need for robust phishing prevention measures even in widely used platforms like Gmail.                           
+                        </figcaption>
+                    </figure>
+                </li></ul><ul class="carousel__thumbnails"><li>
+                    <label for="slide-1"><img src="images/In 2016, a phishing attack on the Hillary Clinton .jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-2"><img src="images/In 2017, a massive phishing attack targeted Gmail .jpg" alt=""></label>
+                </li></ul></div></div><div id='includeHtml'></div></body><script src='code.js'></script>

@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What is the first step to take when you identify a phishing attack?",
+        "optionA": "Ignore it",
+        "optionB": "Report it to your IT department",
+        "optionC": "Click on the link in the email",
+        "optionD": "Reply to the email",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "What tool can help identify and block phishing attempts?",
+        "optionA": "Gmail",
+        "optionB": "Forcepoint",
+        "optionC": "Asana",
+        "optionD": "None of the above",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "What is the purpose of analyzing a phishing attack after it has occurred?",
+        "optionA": "To understand how it happened",
+        "optionB": "To prevent similar attacks in the future",
+        "optionC": "Both A and B",
+        "optionD": "Neither A nor B",
+        "correctOption": "optionC"
+    },
+    {
+        "question": "Who should you contact first when a phishing attack occurs?",
+        "optionA": "Your friends",
+        "optionB": "Your family",
+        "optionC": "Your IT department",
+        "optionD": "The attacker",
+        "correctOption": "optionC"
+    },
+    {
+        "question": "What tool can be used to manage the response and recovery process after a phishing attack?",
+        "optionA": "Gmail",
+        "optionB": "Forcepoint",
+        "optionC": "Asana",
+        "optionD": "None of the above",
+        "correctOption": "optionC"
+    }
+]

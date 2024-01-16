@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Which tool can help in phishing prevention?",
+        "optionA": "Gmail",
+        "optionB": "Microsoft Word",
+        "optionC": "Adobe Photoshop",
+        "optionD": "None of the above",
+        "correctOption": "optionA"
+    },
+    {
+        "question": "What is the best strategy against phishing attacks?",
+        "optionA": "Prevention",
+        "optionB": "Remediation",
+        "optionC": "Neither",
+        "optionD": "Both",
+        "correctOption": "optionA"
+    },
+    {
+        "question": "What is one possible impact of a phishing attack?",
+        "optionA": "Financial loss",
+        "optionB": "Increased sales",
+        "optionC": "Improved reputation",
+        "optionD": "None of the above",
+        "correctOption": "optionA"
+    }
+]
